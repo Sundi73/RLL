@@ -1,0 +1,41 @@
+.app-component{
+ width: 98%;
+}
+
+.main-box{
+    height: 400px;
+    background-color: #8080801f;
+}
+
+.menu-items{
+    list-style: none;
+    line-height: 60px;
+    padding-left: 0px;
+    height: 100%;
+}
+
+
+.menu-list li{
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+.menu-items li:hover {
+    background-color: white;
+    color: black;
+}
+
+.onActive{
+    color: white;
+    background-color: rgba(50, 150, 233, 0.692);
+    -webkit-box-shadow: 7px -7px 6px 0px rgba(0,0,0,0.61);
+-moz-box-shadow: 7px -7px 6px 0px rgba(0,0,0,0.61);
+box-shadow: 7px -7px 6px 0px rgba(0,0,0,0.61);
+}
+
+.onActive:hover{
+    color: white;
+    background-color: rgba(50, 150, 233, 0.692);
+}

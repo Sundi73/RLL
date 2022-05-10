@@ -1,0 +1,40 @@
+ <section class="app-component">
+    <div class="col ">
+        <div class="col-lg-2">
+        <div class="main-box">
+             <div class="menu-list">
+                    <ul class="menu-items">
+                        <li  (click)="goTo('Home')" [ngClass]="{'onActive':selectedMenu == 'Home'}">Home <li>
+                        <li routerLink="/Item" (click)="goTo('Item')" [ngClass]="{'onActive':selectedMenu == 'Item'}">Item</li>
+                        <li  routerLink="/purchase" (click)="goTo('Purchase')"[ngClass]="{'onActive':selectedMenu == 'Purchase'}">Purchase</li>
+                        <li routerLink="/sale" (click)="goTo('Sales')"[ngClass]="{'onActive':selectedMenu == 'Sales'}">Sales</li>
+                        <li routerLink="/customer" (click)="goTo('Customers')"[ngClass]="{'onActive':selectedMenu == 'Customers'}">Customers</li>
+                        <li routerLink="/login" (click)="goTo('logout')"[ngClass]="{'onActive':selectedMenu == 'logout'}">Logout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+          
+         <div class="col-lg-10">
+            <div class="side-menu-content">
+                <div class="tabs" *ngIf="selectedMenu == 'Home'">
+              
+                </div>
+                <div class="tabs" *ngIf="selectedMenu == 'Item'">
+                 
+                </div>
+                <div class="tabs" *ngIf="selectedMenu == 'Purchase'">
+            
+                </div>
+                <div class="tabs" *ngIf="selectedMenu == 'Sales'">
+                  
+                </div>
+                <div class="tabs" *ngIf="selectedMenu == 'Customers'">
+                  
+                </div>
+            </div>
+        </div>
+    
+</div> 
+</section>
+
